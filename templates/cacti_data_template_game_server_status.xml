@@ -1,0 +1,161 @@
+<cacti>	
+	<hash_01001178d044191b102ec98b85aa4a3e84e6d8>
+		<name>Game Server Status</name>
+		<ds>
+			<t_name>on</t_name>
+			<name>|host_description| - Game Server Status</name>
+			<data_input_id>hash_0300116a70b50de67d42e22c4ca283405e56fc</data_input_id>
+			<t_rra_id></t_rra_id>
+			<t_rrd_step></t_rrd_step>
+			<rrd_step>300</rrd_step>
+			<t_active></t_active>
+			<active>on</active>
+			<rra_items>hash_150011c21df5178e5c955013591239eb0afd46|hash_1500110d9c0af8b8acdc7807943937b3208e29|hash_1500116fc2d038fb42950138b0ce3e9874cc60|hash_150011e36f3adb9f152adfa5dc50fd2b23337e</rra_items>
+		</ds>
+		<items>
+			<hash_080011f1f20e5b108d33c5f1c1a6011b8a54ac>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>max_players</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>1000</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>1</data_source_type_id>
+				<t_rrd_heartbeat></t_rrd_heartbeat>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_0700115270b1329a4c0db7d186e92b131c97e3</data_input_field_id>
+			</hash_080011f1f20e5b108d33c5f1c1a6011b8a54ac>
+			<hash_0800117404b61f38039c8a41061f195d583f2c>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>player_count</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>100</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>1</data_source_type_id>
+				<t_rrd_heartbeat></t_rrd_heartbeat>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_070011732db01f16f3edd037de86c6431d2171</data_input_field_id>
+			</hash_0800117404b61f38039c8a41061f195d583f2c>
+		</items>
+		<data>
+			<item_000>
+				<data_input_field_id>hash_070011c72abc6baa01e934e02cbb3400e52228</data_input_field_id>
+				<t_value>on</t_value>
+				<value>44400</value>
+			</item_000>
+			<item_001>
+				<data_input_field_id>hash_070011ac0e7f2e654c67b1a1dbb9f1830205ae</data_input_field_id>
+				<t_value>on</t_value>
+				<value>127.0.0.1</value>
+			</item_001>
+			<item_002>
+				<data_input_field_id>hash_0700111b26aa6ecbeff37b00c446b87d1878f7</data_input_field_id>
+				<t_value>on</t_value>
+				<value>warsow</value>
+			</item_002>
+			<item_003>
+				<data_input_field_id>hash_070011920d675bd58902d12712f2d3042bf943</data_input_field_id>
+				<t_value>on</t_value>
+				<value></value>
+			</item_003>
+		</data>
+	</hash_01001178d044191b102ec98b85aa4a3e84e6d8>
+	<hash_0300116a70b50de67d42e22c4ca283405e56fc>
+		<name>Game Server Status</name>
+		<type_id>1</type_id>
+		<input_string>php &lt;path_cacti&gt;/scripts/gameserver.php &lt;game&gt; &lt;ip&gt; &lt;port&gt; &lt;query_port&gt;</input_string>
+		<fields>
+			<hash_0700111b26aa6ecbeff37b00c446b87d1878f7>
+				<name>Game Server Type</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>in</input_output>
+				<data_name>game</data_name>
+			</hash_0700111b26aa6ecbeff37b00c446b87d1878f7>
+			<hash_070011ac0e7f2e654c67b1a1dbb9f1830205ae>
+				<name>Server's IP Address</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>in</input_output>
+				<data_name>ip</data_name>
+			</hash_070011ac0e7f2e654c67b1a1dbb9f1830205ae>
+			<hash_070011c72abc6baa01e934e02cbb3400e52228>
+				<name>Server Port</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>in</input_output>
+				<data_name>port</data_name>
+			</hash_070011c72abc6baa01e934e02cbb3400e52228>
+			<hash_070011920d675bd58902d12712f2d3042bf943>
+				<name>Query Port (just some games)</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls>on</allow_nulls>
+				<type_code></type_code>
+				<input_output>in</input_output>
+				<data_name>query_port</data_name>
+			</hash_070011920d675bd58902d12712f2d3042bf943>
+			<hash_070011732db01f16f3edd037de86c6431d2171>
+				<name>Current number of players</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>player_count</data_name>
+			</hash_070011732db01f16f3edd037de86c6431d2171>
+			<hash_0700115270b1329a4c0db7d186e92b131c97e3>
+				<name>Maximum number of players.</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>max_players</data_name>
+			</hash_0700115270b1329a4c0db7d186e92b131c97e3>
+		</fields>
+	</hash_0300116a70b50de67d42e22c4ca283405e56fc>
+	<hash_150011c21df5178e5c955013591239eb0afd46>
+		<name>Daily (5 Minute Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>1</steps>
+		<rows>600</rows>
+		<timespan>86400</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_150011c21df5178e5c955013591239eb0afd46>
+	<hash_1500110d9c0af8b8acdc7807943937b3208e29>
+		<name>Weekly (30 Minute Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>6</steps>
+		<rows>700</rows>
+		<timespan>604800</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_1500110d9c0af8b8acdc7807943937b3208e29>
+	<hash_1500116fc2d038fb42950138b0ce3e9874cc60>
+		<name>Monthly (2 Hour Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>24</steps>
+		<rows>775</rows>
+		<timespan>2678400</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_1500116fc2d038fb42950138b0ce3e9874cc60>
+	<hash_150011e36f3adb9f152adfa5dc50fd2b23337e>
+		<name>Yearly (1 Day Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>288</steps>
+		<rows>797</rows>
+		<timespan>33053184</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_150011e36f3adb9f152adfa5dc50fd2b23337e>
+</cacti>
