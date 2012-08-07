@@ -353,6 +353,8 @@ class q3
 		break;
 	    case 'Q3UT3':
 	    case 'q3ut3':
+	    case 'Q3UT4':
+	    case 'q3ut4':
 	        $srv_rules['modver']   = $this->getvalue('g_modversion', $this->g_info);
 	        $srv_rules['gamename'] = 'Quake3 ' . $srv_rules['version']
 		                       . '<br>Urban Terror ' . $srv_rules['modver'];		
