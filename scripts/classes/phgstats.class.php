@@ -168,6 +168,7 @@ class phgstats
 		$query =& new q2;
 	        return $query;
 		break;
+	    case 'q3ut4': // UrbanTerror 4.x
 	    case 'q3': // Quake 3
 	        include_once('q3a.class.php');
 	        $query =& new q3;
